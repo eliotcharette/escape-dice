@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig Dice Game</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="jumbotron ">Pig dice game</h1>
+    <form id="game-input">
+      <label for="players">Select no. of players</label>
+      <!-- <select class="form-control" id="player-number">
+        <option value="0">None</option>
+        <option value="1">Player 1</option>
+        <option value="2">Player 2</option>
+
+      </select> -->
+      <label for="dice">Number of dice</label>
+      <select class="form-control" id="dice">
+        <option value="0">None</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+
+      </select>
+      <!-- <label for="goal">Goal Number</label>
+      <select class="form-control" id="goal">
+        <option value="0">None</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select> -->
+
+      <button type="submit" class="btn btn-success">Lets play!</button>
+    </form>
+
+    <div class="row">
+      <div class="col-md-6">
+
+
+    <div class="initial-hide">
+      <h3>Player 1</h3>
+      <h3>Total: <span id="player-one-total"></span></h3>
+      <div class="player-one">
+      <h3>Round Total: <span id= "player-one-round-total"></span></h3>
+
+      <button type="button" id="roll-player-one" class="btn btn-success">Roll!</button>
+      <button type="button" id="hold-player-one" class="btn btn-danger">Hold!</button>
+    </div>
+    </div>
+  </div>
+    <div class="col-md-6">
+
+    <div class="initial-hide">
+      <h3>Player 2</h3>
+      <h3>Total: <span id="player-two-total"></span></h3>
+      <div class="player-two">
+      <h3>Round Total: <span id= "player-two-round-total"></span></h3>
+
+      <button type="button" id="roll-player-two" class="btn btn-success">Roll!</button>
+      <button type="button" id="hold-player-two" class="btn btn-danger">Hold!</button>
+    </div>
+</div>
+    </div>
+  </div>
+    <p><span class="result"></span></p>
+
+
+  </div>
+</body>
+</html>
